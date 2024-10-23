@@ -12,9 +12,15 @@ export async function getData(){
                 instant.get('ListEducationOfSeoulMOAInfo/1/1000/'),
                 instant.get('SemaPsgudInfoKorInfo/1/1000/')
             ]);
+
+            console.log(exhibition, education, collection)
+
+            
             exhibition = exhibition.data.ListExhibitionOfSeoulMOAInfo.row;
             education = education.data.ListEducationOfSeoulMOAInfo.row;
             collection = collection.data.SemaPsgudInfoKorInfo.row;
+
+            
 
     return {exhibition, education, collection};
 }
