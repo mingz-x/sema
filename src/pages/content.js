@@ -4,7 +4,7 @@ import useStore from '@/state/store';
 import { useSearchParams } from 'next/navigation';
 
 const Content = () => {
-// 
+
   const router = useRouter();
   const { data } = useStore();
   const [item, setItem] = useState(null);
@@ -58,6 +58,10 @@ const Content = () => {
                     <p>{item[1].EDU_PLACE}</p>
                     <h4>{item[1].TCHER_NAME}</h4>
                     <figure><img src={item[1].EDU_IMG}/></figure>
+                    <figure className='save'>
+                        <button><img className='favorite' src='./favorite.svg'/></button>
+                        <button><img className='bookmark' src='./bookmark.svg'/></button>
+                    </figure>
                     <div className='art-info'>
                         <p dangerouslySetInnerHTML={{__html: item[1].EDU_CONTENT}}></p>
                     </div>

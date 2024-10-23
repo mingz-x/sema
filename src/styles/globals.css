@@ -173,6 +173,30 @@ body{
     margin: 0;
     img{width: 100%;}
   }
+  .save{
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 3px;
+    button{
+      padding: 0;
+      border: 0;
+      background-color: #fff;
+      img{width: 30px;}
+    }
+  }
+
+  /* .favorite{
+    fill: #000;
+  }
+  .favorite.active{
+    fill: red;
+  }
+
+  .bookmark.active{
+    fill: #888888;
+  } */
+
   .art-info{
     p{}
   }
@@ -292,7 +316,9 @@ body{
 }
 
 .scrap{
-  h2{}
+  margin: 0 10px;
+  padding-top: 10px;
+  h2{font-weight: 500;}
 }
 
 .login{

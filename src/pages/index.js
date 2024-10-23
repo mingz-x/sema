@@ -20,6 +20,8 @@ const Home = () => {
   let navigator = useRouter();
   const {dataSave,data} = useStore()
   const dp_day = data.exhibition.filter((day) => new Date(day.DP_END) > new Date())
+  const exhibition = data.exhibition.sort((a, b) => new Date(a.DP_START) - new Date(b.DP_START)).reverse();
+  const education = data.education.sort((a, b) => new Date(a.APP_OPEN) - new Date(b.APP_OPEN)).reverse();
 
   // const dp_day = (ex)=>{
   //     // end = new Date(data.exhibition[0].DP_END);
@@ -116,7 +118,7 @@ const Home = () => {
             spaceBetween={5}
             className="mySwiper">
               {
-                data?.exhibition.map((obj,k)=>
+                exhibition.map((obj,k)=>
                   (k<20) ? (
                     <SwiperSlide key={k}>
                       <figure onClick={()=>navigator.push(`content?id=${obj.DP_EX_NO}`)}>
@@ -141,7 +143,7 @@ const Home = () => {
             spaceBetween={5}
             className="mySwiper">
               {
-                data?.education.map((obj,k)=>
+                education.map((obj,k)=>
                   (k<20) ? (
                     <SwiperSlide key={k}>
                       <figure onClick={()=>navigator.push(`content?id=${obj.ACADMY_NO}`)}>
