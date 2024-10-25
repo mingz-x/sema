@@ -8,9 +8,9 @@ const instant = axios.create({
 
 export async function getData(){
     let [exhibition, education, collection] = await Promise.all([
-                instant.get('ListExhibitionOfSeoulMOAInfo/1/1000/'),
-                instant.get('ListEducationOfSeoulMOAInfo/1/1000/'),
-                instant.get('SemaPsgudInfoKorInfo/1/1000/')
+                instant.get('ListExhibitionOfSeoulMOAInfo/1/200/'),
+                instant.get('ListEducationOfSeoulMOAInfo/1/200/'),
+                instant.get('SemaPsgudInfoKorInfo/1/200/')
             ]);
 
             console.log(exhibition, education, collection)

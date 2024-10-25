@@ -319,6 +319,16 @@ body{
   margin: 0 10px;
   padding-top: 10px;
   h2{font-weight: 500;}
+  div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    figure{
+      margin: 0;
+      width: 160px;
+      img{width: 100%;}
+    }
+  }
 }
 
 .login{

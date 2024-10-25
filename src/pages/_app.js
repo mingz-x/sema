@@ -10,11 +10,12 @@ export default function App({Component, pageProps: { session, ...pageProps } }) 
   const {dataSave,data} = useStore()
   useEffect(()=>{
     (async function(){
+      console.log('데이터가 한번만 들어오나용?')
       let openApi = await getData();
       dataSave(openApi);
     }())
   },[]);
-  
+  console.log(data)
   if(!data)return <>데이터가 곹들어와용...</>;
 
   return <>
