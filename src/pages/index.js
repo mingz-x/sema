@@ -75,7 +75,7 @@ const Home = () => {
           SEOUL MUSEUM OF ART
         </h2> */}
         <Swiper 
-          // autoplay={{delay: 4000, disableOnInteraction: false,}} 
+          autoplay={{delay: 4000, disableOnInteraction: false,}} 
           loop={true} 
           pagination={{
             type: 'fraction',
