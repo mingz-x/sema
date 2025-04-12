@@ -86,7 +86,7 @@ const Content = () => {
                     <figure><img src={item[1].EDU_IMG}/></figure>
                     <figure className='save'>
                         <button onClick={()=>favorite(item[1])}><img className='favorite' src={`./favorite${isFavorite?'_FILL':''}.svg`}/></button>
-                        <button><img className='bookmark' src='./bookmark.svg'/></button>
+                        // <button><img className='bookmark' src='./bookmark.svg'/></button>
                     </figure>
                     <div className='art-info'>
                         <p dangerouslySetInnerHTML={{__html: item[1].EDU_CONTENT}}></p>
@@ -101,7 +101,7 @@ const Content = () => {
                     <figure><img src={item[2].main_image}/></figure>
                     <figure className='save'>
                         <button onClick={()=>favorite(item[2])}><img className='favorite' src={`./favorite${isFavorite?'_FILL':''}.svg`}/></button>
-                        <button><img className='bookmark' src='./bookmark.svg'/></button>
+                        // <button><img className='bookmark' src='./bookmark.svg'/></button>
                     </figure>
                     <div className='art-info'>
                         <p dangerouslySetInnerHTML={{__html: item[2].matrl_technic}}></p>
