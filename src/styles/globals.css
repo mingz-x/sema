@@ -13,6 +13,7 @@
 */
 
 body{
+  max-width: 375px;
   margin: 16px;
   font-family: "Noto Sans KR", serif;
   font-style: normal;
