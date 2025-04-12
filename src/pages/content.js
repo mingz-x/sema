@@ -115,7 +115,7 @@ const Content = () => {
                     <figure><img src={item[0].DP_MAIN_IMG}/></figure>
                     <figure className='save'>
                         <button onClick={()=>favorite(item[0])}><img className='favorite' src={`./favorite${isFavorite?'_FILL':''}.svg`}/></button>
-                        <button><img className='bookmark' src='./bookmark.svg'/></button>
+                        {/* <button><img className='bookmark' src='./bookmark.svg'/></button> */}
                     </figure>
                     <div className='art-info'>
                         <p  dangerouslySetInnerHTML={{__html: item[0].DP_INFO}}></p>
